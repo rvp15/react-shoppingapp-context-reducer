@@ -1,3 +1,15 @@
 a{
     text-decoration: none !important;
 }
+.product-list .product-image{
+    background-color: rgb(233, 227, 227);
+    /* border-radius: 10px; */
+    margin: 20px;
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 400px;
+    min-height: 400px;
+    -webkit-box-shadow: 3px 7px 7px 2px #ebd7d7;
+    box-shadow: 3px 7px 7px 1px #9c9c9c;
+list-style-type: none;
+}
