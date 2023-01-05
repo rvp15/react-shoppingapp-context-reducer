@@ -27,7 +27,7 @@ console.log(e)
        <div className="product-Container">
         {products.map((product)=>{
           return (
-            <li key={product.id}>
+            <li className='list' key={product.id}>
               <SingleProduct product={product}/>
             </li>
           )
