@@ -8,6 +8,7 @@ import { QuantityPicker } from 'react-qty-picker';
 
 const Cart = () => {
   const {cartItems, dispatchCart,cartTotal } = useContext(NewContext)
+  
 console.log(cartItems)
   return (
     <div className='cart-item'>
@@ -26,12 +27,13 @@ console.log(cartItems)
             </Col>
             <Col md={2} className='col'>
               {/* <span>${item.qty > 1 ? item.price*(item.qty) : item.price}</span> */}
-              <span>{item.price}</span>
+              <span>{item.totalPrice}</span>
             </Col>
             <Col md={2}>
             <QuantityPicker min={0} max={9} height='10px' value={item.qty} width='27px' onChange={(value)=>{dispatchCart({
                             type: "ITEMQTY",
                             payload:{id:item.id,qty:value},
+
                           })}}/>
             </Col>
             <Col md={2} className='col'>

@@ -56,7 +56,7 @@ const Header = () => {
                         className="cart-imgg"
                         alt={item.title}
                       />
-                      <span> : ${item.price}</span>
+                      <span> : ${item.totalPrice}</span>
                       <span
                         fontSize="20px"
                         style={{ cursor: "pointer", padding: "20px" }}
