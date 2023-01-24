@@ -32,7 +32,7 @@ const Home = () => {
   };
   useEffect(() => {
     getproducts();
- 
+ // eslint-disable-next-line 
   }, [form]);
 
   return loading ? (

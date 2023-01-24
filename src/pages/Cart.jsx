@@ -2,7 +2,7 @@
 import { useContext } from 'react'
 import { NewContext } from '../context/NewContext'
 import ListGroup from 'react-bootstrap/ListGroup';
-import { Col,Row,Image,Button, Form} from 'react-bootstrap';
+import { Col,Row,Image,Button} from 'react-bootstrap';
 import { AiFillDelete } from 'react-icons/ai';
 import { QuantityPicker } from 'react-qty-picker';
 

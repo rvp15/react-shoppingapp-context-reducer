@@ -1,4 +1,4 @@
-import { act } from "react-dom/test-utils";
+
 
 export const productReducer = (state, action) => {
   switch (action.type) {
@@ -46,5 +46,7 @@ export const formReducer =(state,action)=>{
   switch(action.type){
     case  "UPDATEFILTER" :
       return action.payload
+      default:
+        return state;
   }
 }
