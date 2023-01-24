@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useContext, useEffect } from "react";
 import { Spinner } from "react-bootstrap";
 import Filters from "../components/Filters";
+import LandingPage from "../components/LandingPage";
 import { SingleProduct } from "../components/SingleProduct";
 import { NewContext } from "../context/NewContext";
 
@@ -13,7 +14,9 @@ const Home = () => {
   const getproducts = async () => {
     try {
       if(!form?.department){
+       
         setLoading(false);
+       
         return;
       }
       const response = await fetch(
@@ -27,9 +30,9 @@ const Home = () => {
       console.log(e);
     }
   };
-
   useEffect(() => {
     getproducts();
+ 
   }, [form]);
 
   return loading ? (
@@ -37,7 +40,7 @@ const Home = () => {
   ) : (
     <div className="home">
       <Filters />
-      <div className="product-Container">
+      {form.department ?(<div className="product-Container">
         {products.map((product) => {
           return (
             <li className="list" key={product.id}>
@@ -45,7 +48,9 @@ const Home = () => {
             </li>
           );
         })}
-      </div>
+      </div>):<LandingPage/>}
+
+   
     </div>
   );
 };

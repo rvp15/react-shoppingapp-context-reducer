@@ -1,5 +1,11 @@
-Note:
-1.install bootstrap: npm install react-bootstrap bootstrap
-2.{/* The following line can be included in your src/index.js or App.js file */}
+-Online Shopping Application developed using fake API
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+-Implemented Context API and reducer for state management.
+
+>Home Page with produce filtering option:
+
+![Alt text](public/Screenshot%202023-01-24%20162910.png)
+
+>Cart Page: with updated products in cart with updated price and quantity.
+
+![Alt text](public/cart.png)

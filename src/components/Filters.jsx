@@ -44,14 +44,13 @@ const Filters = () => {
         <br />
         <label className="label">Sort by Price</label> <br />
         <select
-          name="price"
-          id="price"
-         
+          name="sort"
+          id="sort"
           placeholder="Sort by Price"
           onChange={handleChange}
         >
           <option> </option>
-          <option>Price: Low to High</option>
+          <option >Price: Low to High</option>
           <option>Price: High to Low</option>
         </select>
         <div style={{paddingLeft:10}}>
